@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
 
-  resources :badges, except: [:new, :edit]
+  resources :badges, except: [:new, :edit, :index, :show]
+  resources :students, except: [:new, :create, :destroy, :update, :edit]
 
   root 'students#index'
   # The priority is based upon order of creation: first created -> highest priority.
