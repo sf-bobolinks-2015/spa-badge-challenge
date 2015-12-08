@@ -81,7 +81,7 @@ function miniQuery(selector){
   return element;
 };
 
-miniQuery.ajax = function(object){
+$.ajax = function(object){
   var url = object['url']
   var type = object['type']
 
@@ -101,4 +101,11 @@ miniQuery.ajax = function(object){
     oReq.send(null);
   })
   return myPromise;
+};
+
+$.ready = function(fn){
+  if ( document.readyState === 'complete' ){
+    return fn()
+  }
+  document.addEventListener( 'DOMContentLoaded', fn, false );
 };
