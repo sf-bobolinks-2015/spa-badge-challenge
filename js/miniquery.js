@@ -56,21 +56,19 @@ function miniQuery(selector) {
     }
   };
 
-  element.on = function(tag, eventName, callback) {
+  element.on = function(eventName, callback) {
+    // debugger;
     if (!!elementLength) {
       for (i = 0; i < elementLength; i++) {
-        element[i].addEventListener(eventName, function(e) {
-          return callback();
-        })
+        element[i].addEventListener(eventName, callback)
       }
     } else {
-      element.addEventListener(eventName, function(e) {
-        return callback();
-      })
+      element.addEventListener(eventName, callback)
     }
   }
 
-  element.trigger = function(tag, eventName) {
+
+  element.trigger = function(eventName) {
     var evt = new Event(eventName)
     if (!!elementLength) {
       for (i = 0; i < elementLength; i++) {
@@ -85,7 +83,12 @@ function miniQuery(selector) {
 
 }
 
-
+miniQuery.ready = function(fn) {
+  if ( document.readyState === 'complete'  ) {
+        return fn();
+    }
+  document.addEventListener( 'DOMContentLoaded', fn, false );
+}
 
 
 miniQuery.ajax = function(options){

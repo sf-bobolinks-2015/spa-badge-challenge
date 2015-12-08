@@ -35,7 +35,7 @@ Rails.application.routes.draw do
   # Example resource route with more complex sub-resources:
    resources :teachers do
     resources :badges
-end
+  end
   #   resources :products do
   #     resources :comments
   #     resources :sales do

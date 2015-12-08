@@ -1,17 +1,20 @@
 class BadgesController < ApplicationController
   before_action :find_badge, only: [:show, :update, :destroy]
 
-def index
-  @badges = Badge.all
-  render json: @badges
-end
+# def index
+#   @teachers = Teacher.all
+#   render json: @teachers
+# end
 
-def show
-  render json: @badge
-end
+# def show
+#   @teacher = Teacher.find(params[:teacher_id])
+#   @badges = @teacher.badges
+#   render json: @badges
+# end
 
 def create
-  @badge = Badge.new(badge_params)
+  @teacher = Teacher.find(params[:teacher_id])
+  @badge = @teacher.badges.new(badge_params)
     if @badge.save
        render json: @badge, status: :created, location: @badge
    else
@@ -39,7 +42,8 @@ def badge_params
 end
 
 def find_badge
- @badge = badge.find(params[:id])
+  p params
+ @badge = Badge.find(params[:id])
 end
 
 end
