@@ -6,9 +6,9 @@ function miniQuery(selector) {
     if (selector.indexOf("#") == 0) {
       return document.getElementById(selector.substring(1));
     } else if (selector.indexOf(".") == 0) {
-     return document.getElementsByClassName(selector.substring(1));
-   } else {
-     return document.getElementsByTagName(selector);
+      return document.getElementsByClassName(selector.substring(1));
+    } else {
+      return document.getElementsByTagName(selector);
    }
  };
 
@@ -77,6 +77,29 @@ function miniQuery(selector) {
     } else {
       element.dispatchEvent(evt);
     }
+  }
+
+  element.html = function(text) {
+    if (!!elementLength) {
+      for (i = 0; i < elementLength; i++) {
+        element[i].innerHTML = text;
+      }
+    } else {
+      element.innerHTML = text;
+    }
+  }
+
+  element.append = function(newElement, text) {
+    if (!!elementLength) {
+      for (i = 0; i < elementLength; i++) {
+        var appendedElement = element[i].appendChild(document.createElement(newElement));
+        appendedElement.innerHTML = text
+      }
+    } else {
+      var appendedElement = element.appendChild(document.createElement(newElement));
+      appendedElement.innerHTML = text
+    }
+
   }
 
   return element

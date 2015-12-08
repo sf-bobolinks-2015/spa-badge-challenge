@@ -1,11 +1,12 @@
 $.ready(function() {
-
+  $('.badges').hide()
   clickTeacherHandler();
 
 });
 
   var clickTeacherHandler = function() {
-    $('a').on('click', function(event) {
+    $('.teacher').on('click', function(event) {
+      $('.badges').hide();
       event.preventDefault();
       var teacherId = this.id
       $.ajax({
@@ -13,6 +14,7 @@ $.ready(function() {
         type: 'GET'
       }).then(function(data) {
         console.log(JSON.parse(data));
+        $('.badges').show();
       }).catch(function(data) {
         console.log('Fail');
       })
