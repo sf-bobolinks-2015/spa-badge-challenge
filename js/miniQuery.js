@@ -1,25 +1,20 @@
 /*!
  * minQuery
  */
-$ = miniQuery
+// $ = miniQuery
 
 
  function miniQuery(selector) {
 
-  // var sweetSelector = function(selector){
-    console.log(selector)
     if (selector.charAt(0) === "#"){
       selector = selector.slice(1)
-      console.log(selector)
       var element = document.getElementById(selector)
-      console.log(element)
     }else if(selector.charAt(0)=== "."){
       selector = selector.slice(1)
       var element = document.getElementsByClassName(selector)
     }else{
      var element = document.getElementsByTagName(selector)
     };
-  // };
 
   console.log(element)
 
@@ -91,7 +86,7 @@ $ = miniQuery
 
   element.setHTML = function(addition){
     console.log("*** SETTER ***")
-    return element.innerHTML = addition
+    element.innerHTML = addition
   }
 
   return element
@@ -111,7 +106,7 @@ miniQuery.ajax = function(options) {
   var url = options["url"]
   var type = options["type"]
   var data = options["data"]
-  var dataType =options["dataType"]
+  var dataType = options["dataType"]
   var ourPromise = new Promise(function(resolve, reject){
 
       var httpRequest = new XMLHttpRequest();
