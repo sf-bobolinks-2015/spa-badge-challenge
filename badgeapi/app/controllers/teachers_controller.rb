@@ -7,7 +7,7 @@ end
 
 def show
   @teacher = Teacher.find(params[:id])
-  @badges = @teacher.badges
+  @badges = @teacher.badges.order("votes DESC")
   render json: {
     :teacher => @teacher,
     :badges => @badges

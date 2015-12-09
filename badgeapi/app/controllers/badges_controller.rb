@@ -8,21 +8,14 @@ def create
     if @badge.save
        render json: {
         :badges => @teacher.badges, status: :created,
-        :teacher => @teacher }
-
-  # render json: {
-  #   :teacher => @teacher,
-  #   :badges => @badges
-  # }
+        :teacher => @teacher
+      }
    else
-     render json: @badge.errors, status: :unprocessable_entity # put location back
+     render json: @badge.errors, status: :unprocessable_entity
    end
 end
 
 def update
-  if @badge.votes == nil
-    @badge.votes = 1
-  end
   if params[:data] == 'up'
     @badge.votes += 1
   elsif params[:data] == 'down'
@@ -42,12 +35,12 @@ end
 
 
 private
-def badge_params
-  params.permit(:text, :votes, :teacher_id)
-end
+  def badge_params
+    params.permit(:text, :votes, :teacher_id)
+  end
 
-def find_badge
- @badge = Badge.find(params[:id])
-end
+  def find_badge
+   @badge = Badge.find(params[:id])
+  end
 
 end
