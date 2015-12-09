@@ -11,8 +11,26 @@ class StudentsController < ApplicationController
   end
 
   def show
-    find_student
-  end
+    @student = Student.find(params[:id])
+    @badges = @student.badges
+    upvotes = []
+    downvotes = []
+    @badges.each do |badge|
+     upvotes << badge.votes.where(value: true)
+     downvotes << badge.votes.where(value: false)
+    end
+    finalvotes = []
+    upvotes.each_with_index do |votes, index|
+      finalvotes << votes.count - downvotes[index].count
+
+    end
+    p finalvotes
+    # p finaldownvotes
+    #   .where(value: true).count
+    # down = votes.where(value: false).count
+    # @votes = up - down
+    render json: { student: @student, badges: @badges, votes: finalvotes }
+    end
 
   private
 
@@ -20,8 +38,9 @@ class StudentsController < ApplicationController
     params.permit(:name)
   end
 
-  def find_student
-    @student = Student.find(params[:id])
-  end
+  # sing res yes, convolute your shit also yes.....
+  # def find_student
+  #   @student = Student.find(params[:id])
+  # end
 
 end

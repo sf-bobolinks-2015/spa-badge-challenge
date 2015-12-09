@@ -52,12 +52,12 @@ var $ = function(target) {
       if (isArray(element)){
         for (var i = 0; i < element.length; i++){
           element[i].addEventListener(eventTrigger, function(e){
-            return callback()
+            return callback(e);
           })
         }
       } else {
         addEventListener(eventTrigger, function(e){
-          return callback()
+          return callback(e)
         })
       }
     }
@@ -99,8 +99,9 @@ var $ = function(target) {
       }
     }
 
-
-
+    element.attr = function(attribute){
+      element = element.getAttribute(attribute);
+    }
 
     function isArray(o) {
       return typeof o === "object" && o.length !== undefined;
