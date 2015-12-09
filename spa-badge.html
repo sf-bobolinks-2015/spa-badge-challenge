@@ -8,12 +8,11 @@
   <title>SPABadge</title>
 </head>
 <body>
-
-  <div class="container">
-    <div class="logo">
-      <h1> SPA Badge </h1>
-    </div>
-    <h1> SF Teachers and Mentors </h1>
+  <div class='logo'>
+      <h1> SPA Badge<br>
+      SF Teachers and Mentors </h1>
+  </div>
+  <div class="container left">
       <ul>
         <li><a class='teacher' id='1' href="#">Brick</a></li>
         <li><a class='teacher' id='2' href="#">Hunter</li>
@@ -25,15 +24,13 @@
         <li><a class='teacher' id='8' href="#">Walker</a></li>
       </ul>
   </div>
-
+  <div class='right'>
   <div class="badges content-placeholder container"></div>
   <div class="badge-list"></div>
   <div class="add_badge"></div>
   <script id='teacher_header' type='text/x-handlebars-template'>
-    <h1>Words To Be Remembered By</h1>
     <div class="show-user">
       <h2> {{teacher}} </h2>
-
       <div class="add-badge">
         <h3> Add a Badge: </h3>
         <form action="#" class='add_badge_button'>
@@ -77,6 +74,7 @@
   {{/each}}
       </ol>
   </div>
+</div>
   </script>
 
 
