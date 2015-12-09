@@ -90,7 +90,7 @@ $.ajax = function(object){
 
     oReq.onreadystatechange = function( response ) {
       if (oReq.readyState == 4) {
-        if (oReq.status == 200) {
+        if (oReq.status <= 299) {
           resolve(oReq.response);
         } else {
           reject(oReq.response);
@@ -98,6 +98,10 @@ $.ajax = function(object){
       }
     }
     oReq.open(type, url, true);
+
+    if (type == 'POST' || type == 'PUT') {
+      oReq.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    }
     oReq.send(null);
   })
   return myPromise;

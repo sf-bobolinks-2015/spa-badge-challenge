@@ -1,22 +1,19 @@
 $.ready(function() {
-  $('body-container').hide();
-  studentCall();
+  $('.body-container').hide();
+  studentList();
 });
 
 
-var studentCall = function(){
-  $('li a').on('click', function(event){
-    event.preventDefault();
-
-  });
+var studentList = function(){
 
   var request = $.ajax({
     url: 'http://localhost:3000',
     type: 'get',
     dataType: 'json'
-  });
+  })
 
-  request.done(function(response){
-    console.log(response)
+  request.then(function(response){
+    $('ul').append('<li>' + response + '</li>')
   });
 };
+
