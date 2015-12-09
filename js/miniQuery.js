@@ -84,6 +84,7 @@ function miniQuery(selector){
 miniQuery.ajax = function(object){
   var url = object['url']
   var type = object['type']
+  var dataType = object['dataType']
 
   var myPromise = new Promise( function( resolve, reject ) {
     var oReq = new XMLHttpRequest();
