@@ -8,6 +8,27 @@ h1, h2, p, div {
   color: white;
 }
 
+/*.slogan {
+  padding: 3px 30px;
+  width: 600px;
+  overflow: hidden;
+}*/
+
+.slogan {
+  padding: 3px 30px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.slogan .body {
+  font-family: 'Oswald', 'sans-serif';
+  font-size: 18px;
+  padding-right:25px;
+  float:left;
+  font-weight:bold;
+  width: 600px;
+ }
+
 a {
   text-decoration: none;
   color: dodgerblue;
@@ -73,19 +94,7 @@ th {
   width: 400px;
 }
 
-.slogan {
-  padding: 3px 30px;
-  width: 600px;
-  overflow: hidden;
-}
 
-.slogan .body {
-  font-family: 'Oswald', 'sans-serif';
-  font-size: 18px;
-  padding-right:25px;
-  float:left;
-  font-weight:bold
- }
 
 .vote-on, .vote-off {
   float:left;
@@ -204,11 +213,7 @@ th {
   width: 400px;
 }
 
-.slogan {
-  padding: 3px 30px;
-  width: 600px;
-  overflow: hidden;
-}
+
 
 .slogan .body {
   font-family: 'Oswald', 'sans-serif';
@@ -307,5 +312,3 @@ th {
   display: inline;
   padding: 3px;
 }
-
-

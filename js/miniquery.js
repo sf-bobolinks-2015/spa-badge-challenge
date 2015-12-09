@@ -89,6 +89,11 @@ function miniQuery(selector) {
     }
   }
 
+  element.getHtml = function() {
+    // debugger;
+    return element.innerHTML
+  }
+
   element.append = function(newElement, text) {
     if (!!elementLength) {
       for (i = 0; i < elementLength; i++) {
@@ -100,6 +105,10 @@ function miniQuery(selector) {
       appendedElement.innerHTML = text
     }
 
+  }
+
+  element.classList = function() {
+    return element.classList
   }
 
   return element
@@ -122,7 +131,7 @@ miniQuery.ajax = function(options){
   var httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {
       if(httpRequest.readyState === 4) {
-        if(httpRequest.status === 200) {
+        if(httpRequest.status <= 299) {
           resolve(httpRequest.response);
         } else {
           reject(httpRequest.response);
@@ -130,7 +139,14 @@ miniQuery.ajax = function(options){
       }
     }
     httpRequest.open(type, url, true)
-    httpRequest.send(data)
+    // console.log(data)
+    if (type == "POST" || type == "PUT") {
+      httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    }
+    // consider converting data to json b4 send.
+    // httpRequest.send("fname=Henry&lname=Ford");
+    // nope
+    httpRequest.send(data);
   })
   return myPromise
 }

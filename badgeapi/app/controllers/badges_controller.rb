@@ -1,30 +1,28 @@
 class BadgesController < ApplicationController
   before_action :find_badge, only: [:show, :update, :destroy]
 
-# def index
-#   @teachers = Teacher.all
-#   render json: @teachers
-# end
-
-# def show
-#   @teacher = Teacher.find(params[:teacher_id])
-#   @badges = @teacher.badges
-#   render json: @badges
-# end
 
 def create
   @teacher = Teacher.find(params[:teacher_id])
   @badge = @teacher.badges.new(badge_params)
     if @badge.save
-       render json: @badge, status: :created, location: @badge
+       render json: @badge, status: :created
    else
-     render json: @badge.errors, status: :unprocessable_entity
+     render json: @badge.errors, status: :unprocessable_entity # put location back
    end
 end
 
 def update
-  if @badge.update(badge_params)
-    head :no_content
+  if @badge.votes == nil
+    @badge.votes = 1
+  end
+  if params[:data] == 'up'
+    @badge.votes += 1
+  elsif params[:data] == 'down'
+    @badge.votes -= 1
+  end
+  if @badge.save
+    render json: @badge.votes
   else
     render status: :unprocessable_entity
   end
@@ -38,11 +36,10 @@ end
 
 private
 def badge_params
-  params.permit(:text, :votes)
+  params.permit(:text, :votes, :teacher_id)
 end
 
 def find_badge
-  p params
  @badge = Badge.find(params[:id])
 end
 
