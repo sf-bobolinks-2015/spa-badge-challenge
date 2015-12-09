@@ -63,6 +63,7 @@ $.ready(function() {
   var addBadgeHandler = function() {
     $('.add_badge_button').on('submit', function(event) {
       event.preventDefault();
+        var that = this
         var teacherId = this.children[0].name
         var badgeText = this.children[1].value
       $.ajax({
@@ -70,6 +71,7 @@ $.ready(function() {
         type: 'POST',
         data: "text="+badgeText
       }).then(function(data) {
+        that.children[1].value = ""
         displayTeacherBadges(JSON.parse(data));
         voteHandler();
       }).catch(function(data) {

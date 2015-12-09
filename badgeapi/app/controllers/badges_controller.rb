@@ -7,7 +7,7 @@ def create
   @badge = @teacher.badges.new(badge_params)
     if @badge.save
        render json: {
-        :badges => @teacher.badges, status: :created,
+        :badges => @teacher.badges.order("votes DESC"), status: :created,
         :teacher => @teacher
       }
    else
