@@ -6,7 +6,14 @@ def create
   @teacher = Teacher.find(params[:teacher_id])
   @badge = @teacher.badges.new(badge_params)
     if @badge.save
-       render json: @badge, status: :created
+       render json: {
+        :badges => @teacher.badges, status: :created,
+        :teacher => @teacher }
+
+  # render json: {
+  #   :teacher => @teacher,
+  #   :badges => @badges
+  # }
    else
      render json: @badge.errors, status: :unprocessable_entity # put location back
    end

@@ -1,13 +1,10 @@
 $.ready(function() {
-  // $('.badges').hide()
   clickTeacherHandler();
-
 
 });
 
   var clickTeacherHandler = function() {
     $('.teacher').on('click', function(event) {
-      // $('.badges').hide();
       event.preventDefault();
       var teacherId = this.id
       $.ajax({
@@ -17,7 +14,7 @@ $.ready(function() {
         displayTeacherHeader(JSON.parse(data));
         displayTeacherBadges(JSON.parse(data));
         voteHandler();
-        // $('.badges').show();
+        addBadgeHandler();
       }).catch(function(data) {
         console.log('Fail');
       })
@@ -37,21 +34,20 @@ $.ready(function() {
   var displayTeacherBadges = function(data) {
     var ourStashTest = $('#badge_list').getHtml();
     var theTemplate = Handlebars.compile(ourStashTest)
-    var context = {'teacher': data["teacher"]["name"],
-                    'id': data["teacher"]["id"],
+    var context = { 'id': data["teacher"]["id"],
                     'badges': data["badges"],
                     'teacher_id': data["teacher"]
                   };
     var theCompliedHtml = theTemplate(context);
     $('.badge-list').html(theCompliedHtml);
-}
+  }
 
   var voteHandler = function() {
-    $('form').on('submit', function(event) {
+    $('.vote_button').on('submit', function(event) {
       event.preventDefault();
-      badgeId = this.classList[0]
-      teacherId = this.classList[1]
-      voteType = this.classList[2]
+      var badgeId = this.classList[0]
+      var teacherId = this.classList[1]
+      var voteType = this.classList[2]
       $.ajax({
         url: 'http://localhost:3000/teachers/' + teacherId + '/badges/' + badgeId,
         type: 'PUT',
@@ -59,5 +55,22 @@ $.ready(function() {
       }).then(function(data) {
         $("#"+badgeId+"Points").html("(" + data + " points)")
       })
-  })
-}
+    })
+  }
+
+  var addBadgeHandler = function() {
+    $('.add_badge_button').on('submit', function(event) {
+      event.preventDefault();
+      console.log('ahhhh')
+        var teacherId = this.children[0].name
+        var badgeText = this.children[1].value
+      $.ajax({
+        url: 'http://localhost:3000/teachers/'+teacherId+'/badges',
+        type: 'POST',
+        data: "text="+badgeText
+      }).then(function(data) {
+        displayTeacherBadges(JSON.parse(data));
+        voteHandler();
+      })
+    })
+  }

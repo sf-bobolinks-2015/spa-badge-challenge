@@ -36,8 +36,8 @@
 
       <div class="add-badge">
         <h3> Add a Badge: </h3>
-        <form action="#">
-          <input type="hidden" name="user_id" value="5" />
+        <form action="#" class='add_badge_button'>
+          <input type="hidden" name="{{id}}" value="5" />
           <input type="text" name="content" />
           <input type="image" src="img/add_button.png" alt="Add Slogan" />
         </form>
@@ -52,7 +52,7 @@
 
     <li class="body">{{this.text}}</li>
     <div class="vote-on">
-      <form action="#" class='{{this.id}} {{this.teacher_id}} up'>
+      <form action="#" class='{{this.id}} {{this.teacher_id}} up vote_button '>
         <input type="hidden" name="slogan_id" value='{{this.id}}'>
         <input type="hidden" name="vote_type" value="up">
         <button class="up" type="submit" name="submit">
@@ -61,7 +61,7 @@
       </form>
     </div>
     <div class="vote-on">
-      <form action="#" class='{{this.id}} {{this.teacher_id}} down'>
+      <form action="#" class='{{this.id}} {{this.teacher_id}} down vote_button '>
         <input type="hidden" name="slogan_id" value='{{this.id}}'>
         <input type="hidden" name="vote_type" value="down">
         <button class="down" type="submit" name="submit">
