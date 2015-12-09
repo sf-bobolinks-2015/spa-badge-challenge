@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
 
   def index
+    p "*" * 50
     @students = Student.all
     render json: @students
   end

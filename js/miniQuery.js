@@ -1,8 +1,10 @@
 var $ = function(target) {
   this.target = target;
   var selector = target.charAt(0)
+
   var selectorTag = target.slice(1)
     if (selector === "#"){
+
       var element = document.getElementById(selectorTag);
     } else if (selector === ".") {
       var element = document.getElementsByClassName(selectorTag)
@@ -72,12 +74,16 @@ var $ = function(target) {
       }
     }
     element.html = function(content){
-       if (isArray(element)){
-        for (var i = 0; i < element.length; i++){
-          element.innerHTML = content
+        if (content === undefined){
+          return element.innerHTML
+        } else {
+         if (isArray(element)){
+          for (var i = 0; i < element.length; i++){
+            element[i].innerHTML = content
+          }
+        } else {
+            element.innerHTML = content
         }
-      } else {
-          element.innerHTML = content
       }
     }
 
@@ -104,20 +110,28 @@ var $ = function(target) {
 }
 
   $.ajax = function(args) {
+
     var myPromise = new Promise(function(resolve, reject){
         var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function( response ) {
           if (xhr.readyState === 4 ) {
             if(xhr.status === 200){
-              args.success
+              resolve(xhr.response);
             }
             else {
-              args.fail
+              reject(xhr.response);
             }
           }
         }
-    xhr.open(args.type, args.url, true);
+    xhr.open(args.method, args.url, true);
     xhr.send(null);
-    alert("yooooo")
   })
+    return myPromise;
+}
+
+$.ready = function(fn) {
+ if ( document.readyState === 'complete'  ) {
+       return fn();
+   }
+ document.addEventListener( 'DOMContentLoaded', fn, false );
 }
