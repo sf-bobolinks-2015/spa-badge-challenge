@@ -1162,3 +1162,539 @@ Started GET "/nominees" for ::1 at 2015-12-08 19:16:05 -0800
 Processing by NomineesController#index as */*
   [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
 Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:35:54 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:41:55 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:42:25 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:42:58 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:43:40 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:44:39 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:45:04 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:45:55 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:46:49 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:47:12 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:49:05 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 09:49:53 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:01:26 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:01:32 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:02:28 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:02:53 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:05:07 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:05:50 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:05:56 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:06:53 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (1.0ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:07:00 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:07:29 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:07:44 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:08:11 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:08:55 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:09:19 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:09:40 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:09:41 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:09:56 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:10:41 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:11:24 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:14:17 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:28:25 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:31:34 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:33:15 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:46:26 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.4ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:48:15 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:49:17 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:57:27 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:58:16 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:59:07 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 10:59:36 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:01:09 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:01:17 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:03:48 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:04:01 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:04:15 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:04:29 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:04:33 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:04:51 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:04:54 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:05:08 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:05:17 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:05:58 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:05:59 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:06:00 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:06:00 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:06:12 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:06:21 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:06:57 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:07:13 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:07:33 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "nominees" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Shambhavi"], ["created_at", "2015-12-09 19:09:30.861432"], ["updated_at", "2015-12-09 19:09:30.861432"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:09:37 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:10:14 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:11:32 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.4ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:17:16 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:19:20 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:20:52 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:22:20 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:28:18 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:29:28 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:29:50 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:30:12 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:30:56 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:35:44 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:35:51 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:36:26 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:37:07 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:37:10 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.4ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:45:08 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:46:07 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:46:35 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:53:48 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.2ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:55:28 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.3ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 11:55:44 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 12:12:44 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.4ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 12:15:38 -0800
+Processing by NomineesController#index as */*
+  [1m[36mNominee Load (0.3ms)[0m  [1mSELECT "nominees".* FROM "nominees"[0m
+Completed 200 OK in 78ms (Views: 76.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-12-09 12:20:31 -0800
+Processing by BadgesController#index as HTML
+Completed 200 OK in 16ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nominees" for ::1 at 2015-12-09 12:20:42 -0800
+Processing by NomineesController#index as */*
+  [1m[35mNominee Load (0.2ms)[0m  SELECT "nominees".* FROM "nominees"
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)

@@ -57,6 +57,7 @@ function miniQuery(selector){
   };
 
   element.on = function(event, action) {
+    console.log(arguments)
     if( selector.charAt(0) === '#' ){
       element.addEventListener(event, function(e) { return action() });
     }

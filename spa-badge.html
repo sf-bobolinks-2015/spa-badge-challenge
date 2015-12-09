@@ -8,27 +8,27 @@
   <title>SPABadge</title>
 </head>
 <body>
+
   <div class="container">
     <div class="logo">
       <h1> SPA Badge </h1>
     </div>
-    <div>
+    <div id="name-list">
       <h1> SF Teachers and Mentors </h1>
       <div class='nominee-result'></div>
       <script id="nominee-list" type="text/x-handlebars-template">
-
         {{#each nominees}}
-        <p>{{name}}</p>
+          <a href="#" class="indiv-name" id="{{id}}" >{{name}}</a>
         {{/each}}
       </script>
     </div>
   </div>
 
-  <div id="#nominee-badges">
+    <div id="#badge-details">
 
 
+    </div>
   </div>
-
 
 
 
