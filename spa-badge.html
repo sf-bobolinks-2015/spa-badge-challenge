@@ -7,30 +7,29 @@
   <title>SPABadge</title>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <h1> SPA Badge </h1>
+    <div class="container">
+      <div class="logo">
+        <h1> SPA Badge </h1>
+      </div>
+      <h1> SF Teachers and Mentors </h1>
+        <ul id='studentList'>
+        </ul>
     </div>
-    <h1> SF Teachers and Mentors </h1>
-      <ul>
-        <li><a href="#">Brick</a></li>
-        <li><a href="#">Hunter</li>
-        <li><a href="#">Jared</a></li>
-        <li><a href="#">Jen</a></li>
-        <li><a href="#">Jordan</a></li>
-        <li><a href="#">Julian</a></li>
-        <li><a href="#">Shambhavi</a></li>
-        <li><a href="#">Walker</a></li>
-        <li><a href="sample-page.html">Sample Page</a></li>
-      </ul>
-  </div>
+
+  <script id='student-names' type='text/x-handlebars-template'>
+    {{#each students}}
+      <li><a id='{{id}}'href="#">{{ first_name }}</a></li>
+    {{/each}}
+  </script>
+
+  <script id='badges-template' type='text/x-handlebars-template'>
   <div class="body-container">
     <div class="logo">
       <h1> SPA Badge </h1>
     </div>
     <h1>Words To Be Remembered By</h1>
     <div class="show-user">
-      <h2> Walker's Badges </h2>
+      <h2> Walker Badges </h2>
 
       <div id="1" class="slogan">
         <div class="body">1) DBC Guru</div>
@@ -101,5 +100,6 @@
       </span>
     </div>
   </div>
+  </script>
 </body>
 </html>

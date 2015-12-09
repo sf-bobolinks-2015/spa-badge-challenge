@@ -56,13 +56,27 @@ function miniQuery(selector){
     }
   };
 
+  element.html = function(html) {
+    if (html === undefined) {
+      return element.innerHTML
+    }
+    else {
+      return element.innerHTML=html;
+    }
+  };
+
+  element.append = function(html, tag) {
+    var add = element.appendChild(document.createElement(tag))
+    add.innerHTML=html
+  };
+
   element.on = function(event, action) {
     if( selector.charAt(0) === '#' ){
-      element.addEventListener(event, function(e) { return action() });
+      element.addEventListener(event, action);
     }
     else {
       for( var i = 0; i < element.length; i++ ){
-        element[i].addEventListener(event, function(e) { return action() });
+        element[i].addEventListener(event, action);
       }
     }
   };
