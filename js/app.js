@@ -1,7 +1,7 @@
 $.ready(function() {
   studentList();
 
-  $('undefined a').on('click', function(event){
+  $('ul').on('click', 'li', function(event){
     event.preventDefault();
     debugger
   });
