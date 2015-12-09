@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script src="js/miniQuery.js"></script>
   <script src="js/app.js"></script>
   <title>SPABadge</title>
 </head>
 <body>
   <div class="container">
-    <div class="logo">
+    <div id="test" sure="real" class="logo">
       <h1> SPA Badge </h1>
     </div>
     <h1> SF Teachers and Mentors </h1>
-      <ul>
-        <li><a href="#">Brick</a></li>
-        <li><a href="#">Hunter</li>
-        <li><a href="#">Jared</a></li>
-        <li><a href="#">Jen</a></li>
-        <li><a href="#">Jordan</a></li>
-        <li><a href="#">Julian</a></li>
-        <li><a href="#">Shambhavi</a></li>
-        <li><a href="#">Walker</a></li>
-        <li><a href="sample-page.html">Sample Page</a></li>
-      </ul>
+    <ul id='namesList'>
+
+    </ul>
+    <div class='container' id="badgeSpace"></div>
+      <script id="address-template" type="text/x-handlebars-template">
+          {{#each name}}
+            <li class="studentList" id="{{id}}"> {{name}}</li>
+          {{/each}}
+      </script>
+
+      <script id="badge_area" type="text/x-handlebars-template">
+      <div>
+        <h2> {{student.name}} Badges </h2>
+        {{#each badges}}
+          <div id="1" class="slogan">
+            <div class="body">{{badge_text}}</div>
+            <div class="vote-on">
+              <form action="#">
+                <input type="hidden" name="slogan_id" value={{id}}>
+                <input type="hidden" name="vote_type" value=true>
+                <button class="up" type="submit" name="submit">
+                  <img src="img/upvote.gif" alt="upvote_image" />
+                </button>
+              </form>
+            </div>
+            <div class="vote-on">
+              <form action="#">
+                <input type="hidden" name="slogan_id" value={{id}}>
+                <input type="hidden" name="vote_type" value=false>
+                <button class="down" type="submit" name="submit">
+                    <img src="img/downvote.gif" alt="downvote_image" />
+                </button>
+              </form>
+            </div>
+          {{/each}}
+          <div class="points">
+            {{#each votes}}
+              {{this}} points
+            {{/each}}
+          </div>
+        </div>
+
+      </script>
   </div>
 </body>
 </html>
