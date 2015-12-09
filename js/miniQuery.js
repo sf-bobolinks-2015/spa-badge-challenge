@@ -72,11 +72,15 @@ function miniQuery(selector){
 
   element.on = function(event, action) {
     if( selector.charAt(0) === '#' ){
-      element.addEventListener(event, action);
+      element.addEventListener(event, function(e){
+        return action(e)
+      });
     }
     else {
       for( var i = 0; i < element.length; i++ ){
-        element[i].addEventListener(event, action);
+        element[i].addEventListener(event, function(e){
+          return action(e)
+        });
       }
     }
   };
