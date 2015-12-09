@@ -54,6 +54,8 @@ $.ready(function() {
         data: "data="+voteType
       }).then(function(data) {
         $("#"+badgeId+"Points").html("(" + data + " points)")
+      }).catch(function(data) {
+        console.log('Request Failed')
       })
     })
   }
@@ -61,7 +63,6 @@ $.ready(function() {
   var addBadgeHandler = function() {
     $('.add_badge_button').on('submit', function(event) {
       event.preventDefault();
-      console.log('ahhhh')
         var teacherId = this.children[0].name
         var badgeText = this.children[1].value
       $.ajax({
@@ -71,6 +72,8 @@ $.ready(function() {
       }).then(function(data) {
         displayTeacherBadges(JSON.parse(data));
         voteHandler();
+      }).catch(function(data) {
+        console.log('Request Failed')
       })
     })
   }
