@@ -8,6 +8,27 @@ h1, h2, p, div {
   color: white;
 }
 
+/*.slogan {
+  padding: 3px 30px;
+  width: 600px;
+  overflow: hidden;
+}*/
+
+.slogan {
+  padding: 3px 30px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.slogan .body {
+  font-family: 'Oswald', 'sans-serif';
+  font-size: 18px;
+  padding-right:25px;
+  float:left;
+  font-weight:bold;
+  width: 600px;
+ }
+
 a {
   text-decoration: none;
   color: dodgerblue;
@@ -29,6 +50,7 @@ a:hover {
   margin: 10px 0px 5px 0px;
   font-size: 50px;
   color: firebrick;
+  border-bottom: 1px solid white;
 }
 
 .container {
@@ -73,19 +95,7 @@ th {
   width: 400px;
 }
 
-.slogan {
-  padding: 3px 30px;
-  width: 600px;
-  overflow: hidden;
-}
 
-.slogan .body {
-  font-family: 'Oswald', 'sans-serif';
-  font-size: 18px;
-  padding-right:25px;
-  float:left;
-  font-weight:bold
- }
 
 .vote-on, .vote-off {
   float:left;
@@ -204,11 +214,7 @@ th {
   width: 400px;
 }
 
-.slogan {
-  padding: 3px 30px;
-  width: 600px;
-  overflow: hidden;
-}
+
 
 .slogan .body {
   font-family: 'Oswald', 'sans-serif';
@@ -308,4 +314,16 @@ th {
   padding: 3px;
 }
 
+.left {
+  margin-top: 0px;
+  float:left;
+  width: 15%;
+}
 
+.right {
+  float: right;
+  width: 80%;
+  border-left: 1px solid white;
+  height: 600px;
+
+}
