@@ -3,16 +3,17 @@ class BadgesController < ApplicationController
 
 
 def create
+  # check_session_for_badges
   @teacher = Teacher.find(params[:teacher_id])
   @badge = @teacher.badges.new(badge_params)
     if @badge.save
-       render json: {
+      render json: {
         :badges => @teacher.badges.order("votes DESC"), status: :created,
         :teacher => @teacher
       }
-   else
+    else
      render json: @badge.errors, status: :unprocessable_entity
-   end
+    end
 end
 
 def update
@@ -28,12 +29,6 @@ def update
   end
 end
 
-def destroy
-  @badge.destroy
-  head :no_content
-end
-
-
 private
   def badge_params
     params.permit(:text, :votes, :teacher_id)
@@ -41,6 +36,10 @@ private
 
   def find_badge
    @badge = Badge.find(params[:id])
+  end
+
+  def check_session_for_badges
+    session[:votes] = [] if session[:votes] == nil
   end
 
 end
