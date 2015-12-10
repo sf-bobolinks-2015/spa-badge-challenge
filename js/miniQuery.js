@@ -120,6 +120,7 @@ $.ajax = function(object){
     if (type == 'POST' || type == 'PUT') {
       oReq.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     }
+
     oReq.send(null);
   })
   return myPromise;
