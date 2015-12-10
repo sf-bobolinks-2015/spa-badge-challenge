@@ -9,10 +9,19 @@ class BadgesController < ApplicationController
     end
   end
 
+  def update
+    if @badge.update(badge_params)
+      head :put
+      render json: @badge, status: :updated, location: @badge
+    else
+      render json: @badge.errors, status: :unprocessable_entity
+    end
+  end
+
   private
 
   def badge_params
-    params.permit(:title, :student_id)
+    params.permit(:title, :votes, :student_id)
   end
 
 end
